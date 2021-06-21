@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>All Products - Redstore</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <!--<div class ="header">-->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                         <li><a href="products.html">Products</a></li>
+                         <li><a href="ContactUs.html">Contact</a></li>
+                         <li><a href="account.html">Account</a></li>
+
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onClick="menutoggle()" >
+            </div>
+           
+        </div>
+    <!--</div>-->
+    
+        
+        <!------------------------------ cart items details------------------------------>
+        <div class="container">
+            <h4 class="billing-address">
+              BILLING ADDRESS
+            </h4>
+            <form>
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input
+                  
+                    type="text"
+                    class="form-control"
+                    id="firstname"
+                    placeholder="First Name"
+                  />
+                  
+                </div>
+                <div class="col-md-6 form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastname"
+                    placeholder="Last Name"
+                  />
+                  
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    placeholder="Username"
+                    required
+                  />
+                  
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="adress"
+                  placeholder="1234 Main Street"
+                  required
+                />
+                
+              </div>
+              <div class="form-group">
+                
+                
+                <input
+                  type="text"
+                  class="form-control"
+                  id="adress2"
+                  placeholder="Flat No"
+                />
+              </div>
+              <div class="col">
+                <div class="col-md-4 form-group">
+                  <label for="country">Country</label>
+                  <select type="text" class="form-dropdown" id="country">
+                    <option value>Choose...</option>
+                    <option>India</option>
+                  </select>
+                  
+                </div>
+                <div class="col-md-4 form-group">
+                  <label for="city">City</label>
+                  <select type="text" class="form-dropdown" id="city">
+                    <option value>Choose...</option>
+                    <option>Karnataka</option>
+                  </select>
+                  
+                </div>
+                <div class=" form-group form-margin">
+                  <label for="postcode">Postcode</label>
+                  <select type="text" class="form-dropdown" id="postcode">
+                    <option value>Choose...</option>
+                    <option>560068</option>
+                  </select>
+                  
+                </div>
+              </div>
+              <hr />
+              
+              
+              <h4 class="payment">PAYMENT</h4>
+             
+              
+                <label for="debit" class="form-check-label">Debit Card</label>
+              
+             <div class="form-column-payment">
+              <div class="form-row-payment">
+                <div class="form-input">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="card-name"
+                    placeholder="Name on Card"
+                    required
+                  />
+                  
+                </div>
+                <div class="form-input">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="sec-no"
+                    placeholder="CardNumber"
+                    required
+                  />
+                  
+                </div>
+              </div>
+              <div class="form-row-payment">
+                <div class="form-input">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="card-name"
+                    placeholder="MM/YY"
+                    required
+                  />
+                  
+                </div>
+                <div class="form-input">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="sec-no"
+                    placeholder="CVV"
+                    required
+                  />
+                  
+                </div>
+              </div>
+            </div> 
+              <hr class="mb-4" />
+              <button class="proceed-button" type="submit">
+                Preceed &#8594;
+              </button>
+            </form>
+          </div>
+        <!----------------------------------footer------------------------------------->
+        <div class ="footer">
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>The true value of a gift is the sentiment begind the gifting.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                   <ul>
+                       <li>Contact Us</li>
+                       <li>Blog Post</li>
+                       <li>Return Policy</li>
+                       
+                    </ul>
+                </div>
+                
+                
+            </div>
+            
+            <hr><!--horizontal line-->
+            <p class="copyright">Copyright 2021 </p>
+            
+        </div>
+    </div>
+        
+        
+        <!-----------------------------------js for toggle menu-------------------------------------->
+        <script>
+            var menuItems=document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight="0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight="200px";
+                }
+                else{
+                    MenuItems.style.maxHeight="0px";
+                }
+            }
+        </script>
+     
+    </body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>All Products - Redstore</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+    </head>
+    <body>
+        <!--<div class ="header">-->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                         <li><a href="products.html">Products</a></li>
+                         <li><a href="ContactUs.html">Contact</a></li>
+                         <li><a href="account.html">Account</a></li>
+
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onClick="menutoggle()" >
+            </div>
+           
+        </div>
+    
+        
+        <!------------------------------ customer details------------------------------>
+		<div class="main-container">
+		<span class="account-header">My Account</span>
+		<div class="category-row">
+		<div class="account">	
+		<ul class="account-category">
+			<li id="option1" onclick="btn1()">
+				<div class="category-list">
+					<span class="category-list-item">Personal</span>
+				</div>
+			</li>
+			<li onclick="btn2()" id="option2">
+				<div class="category-list">
+					<span class="category-list-item">Addresses</span>
+				</div>
+			</li>
+			<li option3>
+				<div class="category-list">
+					<span class="category-list-item">My Orders</span>
+				</div>
+			</li>
+			
+		</ul>
+	   </div>
+       <div class="details-container">
+		<div id="div1" class="list-content">
+            
+             <div class="first_row">
+				<div class="first_category">
+					<span class="category_name">First Name</span>
+					<input class="account_input" type="text">
+				</div>
+				<div class="second_category">
+					<span class="category_name">Last Name</span>
+					<input class="account_input" type="text">
+				</div>
+			</div>
+			<div>
+				<div class="third_category">
+					<span class="category_name">Email</span>
+					<input class="account_input" type="text">
+				</div>
+				<div class="fourth_category">
+					<span class="category_name">Phone Number</span>
+					<input class="account_input" type="text">
+				</div>
+            </div>
+				<button class="account-button">Save &#8594;</button>
+			
+		    </div>
+        <div id="div2" class="cat-content">
+			<span class="cat-name">Addresses</span>
+            <ul  aria-rowcount="2"></ul>
+            
+               <li> <div class="address1">
+                    <span class="address-1">Address-1</span>
+                    <div  class="division"></div>
+                    <span class="address-name">Arjun Reddy</span>
+                    <span class="address-flat">KA23q34d</span>
+                    <span class="address-locality">Banglore</span>
+                    <span class="address-locality">Karnataka</span>
+                    <span class="address-pin">580093</span>
+                    <span class="address-phone">987654321</span>
+                    <div class="address-buttons">
+                        <button>edit</button>
+                        <button>Remove</button>
+                    </div>
+
+                </div>
+            </li>
+               <li> <div class="address1">
+                    <span class="address-1">Address-2</span>
+                    <div  class="division"></div>
+                        <span class="address-name">Kabir Singh</span>
+                        <span class="address-flat">GA234d</span>
+                        <span class="address-locality">Hyderabad</span>
+                        <span class="address-locality">Telangana</span>
+                        <span class="address-pin">585893</span>
+                        <span class="address-phone">984567321</span>
+                        <div class="address-buttons">
+                            <button >edit</button>
+                            <button >Remove</button>
+                        </div>
+                </div>
+            </li>
+                
+            <li><div class="address1">
+                    <span class="address-1">Address-1</span>
+                    <div  class="division"></div>
+                    <span class="address-name">Arjun Reddy</span>
+                    <span class="address-flat">KA23q34d</span>
+                    <span class="address-locality">Banglore</span>
+                    <span class="address-locality">Karnataka</span>
+                    <span class="address-pin">580093</span>
+                    <span class="address-phone">987654321</span>
+                    <div class="address-buttons">
+                        <button>edit</button>
+                        <button>Remove</button>
+                    </div>
+
+                </div>
+            </li>
+            </div>
+            <div class="add-name">
+                <span class="add-name">Name</span>
+                <input class="name-input" type="text">
+            </div>
+            <div class="add-flat">
+                <span class="add-flatno">Flat Number</span>
+                <input class="flat-input" type="text">
+            </div>
+            <div class="add-area">
+                <span class="add-area">Locality</span>
+                <input class="area-input" type="text">
+            </div>
+            <div class="add-state">
+                <span class="add-state">State</span>
+                <input class="state-input" type="text">
+            </div>
+            <div class="add-pin">
+                <span class="add-pincode">PIN</span>
+                <input class="pin-input" type="text">
+            </div>
+            <div class="add-mob">
+                <span class="add-mob">Phone Number</span>
+                <input class="mob-input" type="text">
+            <div>
+            
+            </div>
+            
+
+
+			
+			
+
+            </div>
+		</div>
+    </div>
+		</div>
+        <!----------------------------------footer------------------------------------->
+        <div class ="footer">
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>The true value of a gift is the sentiment begind the gifting.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                   <ul>
+                       <li>Contact Us</li>
+                       <li>Blog Post</li>
+                       <li>Return Policy</li>
+                       
+                    </ul>
+                </div>
+                
+                
+            </div>
+            
+            <hr><!--horizontal line-->
+            <p class="copyright">Copyright 2021 </p>
+            
+        </div>
+    </div>
+        
+        
+        <!-----------------------------------js for toggle menu-------------------------------------->
+        <script>
+            var menuItems=document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight="0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight="200px";
+                }
+                else{
+                    MenuItems.style.maxHeight="0px";
+                }
+            }
+
+          var div1 = document.getElementById('div1');
+          var div2 = document.getElementById('div2');
+            function btn1(){
+               if( div1.style.visibility == "visible"){
+                div1.style.visibility = "hidden";
+                div2.style.visibility = "hidden";
+               }
+               else {
+                div1.style.visibility = "visible";
+                div2.style.visibility = "hidden";
+               }
+               
+            }
+            function btn2(){
+                if( div2.style.visibility == "visible"){
+                 div2.style.visibility = "hidden";
+                 div1.style.visibility = "hidden";
+
+                }
+                else {
+                 div2.style.visibility = "visible";
+                 div1.style.visibility = "hidden";
+
+                }
+                
+             }
+
+               
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </body>
+</html>
